@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -11,11 +13,25 @@
         etc.
     5. Media Queries
 ////////////////////////*/
-
+/*paars: #5722cd*/
+/*blauw: #4B49E8*/
+/*wit: #F2F0FF*/
+/*rose: #ED4385*/
+/*zwart: #0C0C0C*/
+/*Lichtpaars #F2F0FF*/
+/*Lichtgrijs #F3F6F9*/
+/*Grijs #7A7A7A*/
 /* ------------------------------- 1. Global Styles -------------------------------- */
-
+section{
+    margin-bottom: 50px;
+}
 /* ------------------------------- 2. Typography ----------------------------------- */
-
+*{
+    font-family: Roboto sans-serif;
+}
+h1 h2 h3 h4{
+    font-family: Merriweather sans-serif;
+}
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
@@ -25,7 +41,335 @@
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+header{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #4B49E8, #5722cd);
+    text-align: center;
+    color: #F2F0FF;
+    margin-bottom: 20px;
+
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 350px;
+    padding: 10px 20px;
+}
+.art-narrow{
+    align-self: center;
+    max-width: 350px;
+}
+button{
+    color: #F2F0FF;
+    background: #ED4385;
+    border-radius: 30px;
+    border: none;
+    padding: 12px 10px;
+    margin-bottom: 60px;
+    box-shadow: 2px  2px  20px black ;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
 
 /* --------------- 4.2 Introduction ------------------- */
+.section1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 25px;
+}
+.art1{
+    color: #5722cd;
+    max-width: 400px;
+    align-self: center;
+    white-space: pre-line;
+    font-size: 16px;
+}
+.question{
+    font-size: 12px;
+    margin: 20px 0 0 0;
+}
+.question-link{
+    text-decoration: none;
+    color: #5722cd;
+}
+/* --------------- 4.3 Projects ------------------- */
+.section2{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1400px;
+    justify-content: space-around;
+    width: 100vw;
+    background: #F3F6F9;
+}
+
+.rolling-stone{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.variety{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.worth{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.text{
+    flex-basis: 270px;
+    white-space: pre-line;
+    font-size: 20px;
+}
+.project-img{
+    width: 100%;
+}
+.squiggle{
+    max-width: 35px;
+    margin-bottom: 15px;
+}
+.image-wrapper{
+    flex-basis: 400px;
+    margin: 20px;
+}
+.project-link{
+    text-decoration: none;
+    color: #5722cd;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+/* --------------- 4.4 Services ------------------- */
+
+.section3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+.services{
+    flex-basis: 160px;
+    font-size: 8px;
+    border:  1px solid #5722cd;
+    padding: 10px;
+    box-shadow: 5px  5px  10px grey ;
+    flex-shrink: 0;
+    color: #7A7A7A;
+}
+.services h4{
+    color: #5722cd;
+    font-size: 15px;
+}
+.service-icon{
+    width: 30%;
+    height: 30%;
+    margin-bottom: -25px;
+}
+
+/* --------------- 4.5 Contact form ------------------- */
+
+.section4{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #4B49E8, #5722cd);
+    color: #F2F0FF;
+    margin-bottom: 0;
+ }
+
+.form-title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    align-self: center;
+    text-align: left;
+    width: 90%;
+    max-width: 500px;
+    flex-basis: 250px;
+
+}
+
+#name-field{
+    width: 100%;
+    flex-basis: 25px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: none;
+}
+#email-field{
+    width: 100%;
+    flex-basis: 25px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: none;
+}
+#message-field{
+    width: 100%;
+    flex-basis: 100px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: none;
+
+}
+.form-submit{
+    align-self: center;
+}
+#submit{
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+/* --------------- 4.6 Footer ------------------- */
+footer{
+    background: black;
+    color: #F2F0FF;
+    text-align: center;
+    font-size: 8px;
+    padding: 10px;
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+@media screen and (max-width: 576px) {
+    /* --------------- 5.1 Header ------------------------- */
+    header{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    nav {
+        justify-content: center;
+    }
+    nav ul{
+        justify-content: space-around;
+        flex-basis: 100%;
+        font-size: 20px;
+    }
+    .art-narrow{
+        align-self: center;
+        max-width: 400px;
+    }
+    button{
+        padding: 25px 50px;
+        margin-bottom: 140px;
+        font-size: 14px;
+        border-radius: 50px;
+    }
+    /* --------------- 5.2 Introduction ------------------- */
+    .section1{
+        text-align: center;
+        row-gap: 25px;
+    }
+    .art1{
+        max-width: 500px;
+        font-size: 27px;
+    }
+    .question{
+        font-size: 22px;
+        margin: 30px 0;
+    }
+    /* --------------- 5.3 Projects ------------------- */
+    .rolling-stone {
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+
+    .variety {
+        flex-direction: column-reverse;
+    }
+
+    .worth {
+        flex-direction: column-reverse;
+    }
+
+    .text {
+        flex-basis: 120px;
+        white-space: pre-line;
+        margin-top: -80px;
+    }
+
+    .text h3 {
+        font-size: 35px;
+    }
+
+    .image-wrapper {
+        margin: 40px 0 0 0;
+
+    }
+    /* --------------- 5.4 Services ------------------- */
+    .section3 {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        row-gap: 30px;
+        align-items: center;
+    }
+
+    .services {
+        flex-basis: 300px;
+        font-size: 16px;
+        border: 1px solid #5722cd;
+        padding: 20px;
+        width: 80%;
+        flex-shrink: 0;
+    }
+    /* --------------- 5.5 Contact form ------------------- */
+    .form-title {
+        font-size: 18px;
+        margin: 50px 0 20px 0;
+    }
+
+    .form-title h2 {
+        font-size: 40px;
+    }
+
+    form {
+        font-size: 20px;
+        flex-basis: 350px;
+    }
+
+    #name-field {
+        flex-basis: 45px;
+        margin-bottom: 30px;
+    }
+
+    #email-field {
+        flex-basis: 45px;
+        margin-bottom: 30px;
+    }
+
+    #message-field {
+        flex-basis: 200px;
+        margin-bottom: 30px;
+    }
+
+    #submit {
+        width: 180px;
+        height: 60px;
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+    /* --------------- 5.6 Footer ------------------- */
+    footer {
+        font-size: 14px;
+        padding: 25px;
+    }
+}
