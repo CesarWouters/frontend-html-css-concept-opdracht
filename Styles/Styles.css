@@ -48,7 +48,6 @@ header{
     text-align: center;
     color: #F2F0FF;
     margin-bottom: 20px;
-
 }
 nav {
     display: flex;
@@ -76,7 +75,6 @@ button{
     text-transform: uppercase;
     font-size: 10px;
 }
-
 
 /* --------------- 4.2 Introduction ------------------- */
 .section1{
